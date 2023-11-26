@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import FirstPage from './pages/FirstPage'
+import SecondPage from './pages/SecondPage'
+import ThirdPage from './pages/ThirdPage'
+import FirstSubPage from './pages/FirstSubPage'
+import SecondSubPage from './pages/SecondSubPage'
+import ThirdSubPage from './pages/ThirdSubPage'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path='*' element={<HomePage/>} />
+          <Route path='first' element={<FirstPage/>} />
+          <Route path='second' element={<SecondPage/>} />
+          <Route path='third' element={<ThirdPage/>} />
+          <Route path='first/sub' element={<FirstSubPage/>} />
+          <Route path='second/sub' element={<SecondSubPage/>} />
+          <Route path='third/sub' element={<ThirdSubPage/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
