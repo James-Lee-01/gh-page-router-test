@@ -8,10 +8,12 @@ import FirstSubPage from './pages/FirstSubPage'
 import SecondSubPage from './pages/SecondSubPage'
 import ThirdSubPage from './pages/ThirdSubPage'
 
+const basename = process.env.PUBLIC_URL;
+
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path='*' element={<HomePage/>} />
           <Route path='first' element={<FirstPage/>} />
