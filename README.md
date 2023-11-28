@@ -5,6 +5,13 @@
 示範關於在Github Pages上路由切換及重新整理出現404 not found的解決方案。
 
 ## 專案內容
+[Demo](https://james-lee-01.github.io/gh-page-router-test/ "link")
+
+利用 [spa-github-pages](https://github.com/rafgraph/spa-github-pages/ "link")
+來撰寫在Github Pages上部署SPA網頁時，在重新整理時不影響URL及網頁導向的示範repo。
+
+[Article 在此](https://medium.com/@JammsL/%E5%BE%9E%E5%81%9A%E4%B8%AD%E5%AD%B8-github-pages%E9%87%8D%E6%95%B4%E6%80%8E%E6%9C%83404-%E8%B7%AF%E7%94%B1%E5%91%A2-%E4%B8%8B-05d91f4b68b7 "link")
+
 
 
 
